@@ -24,6 +24,7 @@ input("Press Enter to Begin")
 print(args.hexfile)
 f = open(args.hexfile, 'r')
 ins = f.readlines() 
+#ins=ins[2:-1]
 deadbeef = 'deadbeef'
 # baddab99 = 'baddab99'
 

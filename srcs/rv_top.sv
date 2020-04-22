@@ -1,5 +1,5 @@
 `timescale 1ns / 1ps
-module rv_top
+module rv_uart_top
  (input  logic       clk,
   input  logic       Rst,
   input  logic       debug,

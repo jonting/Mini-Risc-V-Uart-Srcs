@@ -1,0 +1,44 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Apr  1 13:02:18 2020
+# Process ID: 7510
+# Current directory: /home/sabuj/Mini-Risc-V-Uart-Srcs
+# Command line: vivado
+# Log file: /home/sabuj/Mini-Risc-V-Uart-Srcs/vivado.log
+# Journal file: /home/sabuj/Mini-Risc-V-Uart-Srcs/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/sabuj/vivado_new/MiniRISCV/MiniRISCV.xpr
+update_compile_order -fileset sources_1
+add_files -norecurse {/home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/IRAM_Controller.sv /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/uart_tx6.vhd /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/FIFO_8I32O.vhd /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Control_majumder_backup.sv /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/DB.vhd /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Fetch_Reprogrammable.sv /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Branoffgen.sv /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Decode.sv /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/RISCVcore_uart.sv /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Debug_Display.sv /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Brachdecision.sv /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/ALU.sv /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Forwarding.sv /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Memory.sv /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Hazard.sv /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/UART_Programmer.sv /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Timer.sv /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/compare.sv /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/CSR.sv /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/uart_rx6.vhd /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Addressable_FIFO.sv /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Immgen.sv /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/RISCVcore.sv /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/branchforward.sv /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Fetch.sv /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/uart_controller.sv /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/CDiv.vhd /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Memory_ff.sv /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/rv_uart_top.sv /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/rv_top.sv /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/tx_control.sv /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Memory_byteaddress.sv /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Memory_Controller.sv /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Writeback.sv /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/SingPul.vhd /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Regfile.sv /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/FIFO_32I8O.vhd /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Execute.sv}
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Timer.sv] -no_script -reset -force -quiet
+remove_files  /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Timer.sv
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_runs impl_2 -jobs 2
+wait_on_run impl_2
+open_run impl_2
+reset_run synth_1
+launch_runs impl_2 -to_step write_bitstream -jobs 2
+wait_on_run impl_2
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {/home/sabuj/Downloads/rv_top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {/home/sabuj/Downloads/rv_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]

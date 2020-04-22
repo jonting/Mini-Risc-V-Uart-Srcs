@@ -1,0 +1,693 @@
+/*
+
+Xilinx Vivado v2019.1 (64-bit) [Major: 2019, Minor: 1]
+SW Build: 2552052 on Fri May 24 14:47:09 MDT 2019
+IP Build: 2548770 on Fri May 24 18:01:18 MDT 2019
+
+Process ID (PID): 7510
+License: Customer
+
+Current time: 	Wed Apr 01 13:02:35 EDT 2020
+Time zone: 	Eastern Standard Time (America/Kentucky/Louisville)
+
+OS: Ubuntu
+OS Version: 4.18.0-25-generic
+OS Architecture: amd64
+Available processors (cores): 4
+
+Display: :0
+Screen size: 1366x768
+Screen resolution (DPI): 100
+Available screens: 1
+Available disk space: 142 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	/home/sabuj/Vivado2019/Vivado/2019.1/tps/lnx64/jre9.0.4
+Java executable location: 	/home/sabuj/Vivado2019/Vivado/2019.1/tps/lnx64/jre9.0.4/bin/java
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	sabuj
+User home directory: /home/sabuj
+User working directory: /home/sabuj/Mini-Risc-V-Uart-Srcs
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /home/sabuj/Vivado2019/Vivado
+HDI_APPROOT: /home/sabuj/Vivado2019/Vivado/2019.1
+RDI_DATADIR: /home/sabuj/Vivado2019/Vivado/2019.1/data
+RDI_BINDIR: /home/sabuj/Vivado2019/Vivado/2019.1/bin
+
+Vivado preferences file location: /home/sabuj/.Xilinx/Vivado/2019.1/vivado.xml
+Vivado preferences directory: /home/sabuj/.Xilinx/Vivado/2019.1/
+Vivado layouts directory: /home/sabuj/.Xilinx/Vivado/2019.1/layouts
+PlanAhead jar file location: 	/home/sabuj/Vivado2019/Vivado/2019.1/lib/classes/planAhead.jar
+Vivado log file location: 	/home/sabuj/Mini-Risc-V-Uart-Srcs/vivado.log
+Vivado journal file location: 	/home/sabuj/Mini-Risc-V-Uart-Srcs/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-7510-sabuj-Inspiron-5558
+
+Xilinx Environment Variables
+----------------------------
+XILINX: /home/sabuj/Vivado2019/Vivado/2019.1/ids_lite/ISE
+XILINX_DSP: /home/sabuj/Vivado2019/Vivado/2019.1/ids_lite/ISE
+XILINX_PLANAHEAD: /home/sabuj/Vivado2019/Vivado/2019.1
+XILINX_SDK: /home/sabuj/Vivado2019/SDK/2019.1
+XILINX_VIVADO: /home/sabuj/Vivado2019/Vivado/2019.1
+XILINX_VIVADO_HLS: /home/sabuj/Vivado2019/Vivado/2019.1
+
+
+GUI allocated memory:	211 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 865 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// HMemoryUtils.trashcanNow. Engine heap size: 790 MB. GUI used memory: 41 MB. Current time: 4/1/20, 1:02:37 PM EDT
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+selectList(PAResourceQtoS.SyntheticaGettingStartedView_RECENT_PROJECTS, "/home/sabuj/vivado_new/MiniRISCV/MiniRISCV.xpr", 0); // q (O, cl)
+// [GUI Memory]: 57 MB (+56778kb) [00:29:39]
+// [Engine Memory]: 793 MB (+679848kb) [00:29:39]
+// by (cl):  Open Project : addNotify
+// Opening Vivado Project: /home/sabuj/vivado_new/MiniRISCV/MiniRISCV.xpr. Version: Vivado v2019.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project /home/sabuj/vivado_new/MiniRISCV/MiniRISCV.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 69 MB (+10183kb) [00:29:46]
+// [GUI Memory]: 94 MB (+22040kb) [00:29:47]
+// [Engine Memory]: 834 MB (+1325kb) [00:29:47]
+// WARNING: HEventQueue.dispatchEvent() is taking  5077 ms.
+// Tcl Message: open_project /home/sabuj/vivado_new/MiniRISCV/MiniRISCV.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/sabuj/Vivado2019/Vivado/2019.1/data/ip'. 
+// Tcl Message: open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:10 . Memory (MB): peak = 6401.266 ; gain = 70.730 ; free physical = 2564 ; free virtual = 7447 
+// [Engine Memory]: 883 MB (+7596kb) [00:29:51]
+// Project name: MiniRISCV; location: /home/sabuj/vivado_new/MiniRISCV; part: xc7a100tcsg324-1
+// Elapsed time: 12 seconds
+dismissDialog("Open Project"); // by (cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 907 MB. GUI used memory: 48 MB. Current time: 4/1/20, 1:32:22 PM EDT
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 99 MB (+1265kb) [00:32:16]
+// Elapsed time: 384 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Add Sources]", 2, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cl): Add Sources: addNotify
+dismissDialog("Add Sources"); // c (cl)
+// Elapsed time: 17 seconds
+maximizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // az (aK, cl)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files]", 1); // B (F, cl)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, UART_Programmer (UART_Programmer.sv)]", 6); // B (F, cl)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, UART_Programmer (UART_Programmer.sv)]", 6); // B (F, cl)
+// PAPropertyPanels.initPanels (Timer.sv) elapsed time: 0.2s
+// Elapsed time: 348 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, Timer.sv]", 2, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, Timer.sv]", 2, false, false, false, false, false, true); // B (F, cl) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 933 MB. GUI used memory: 51 MB. Current time: 4/1/20, 1:45:02 PM EDT
+selectCodeEditor("Timer.sv", 221, 83); // cl (w, cl)
+// [Engine Memory]: 933 MB (+6525kb) [00:42:40]
+// [GUI Memory]: 106 MB (+2066kb) [00:43:33]
+// Elapsed time: 97 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Add Sources]", 2, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cl): Add Sources: addNotify
+dismissDialog("Add Sources"); // c (cl)
+// Elapsed time: 613 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Add Sources]", 2, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cl): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a (E, c)
+// HMemoryUtils.trashcanNow. Engine heap size: 953 MB. GUI used memory: 57 MB. Current time: 4/1/20, 1:57:03 PM EDT
+String[] filenames31467 = {"/home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/ALU.sv", "/home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Addressable_FIFO.sv", "/home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Brachdecision.sv", "/home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Branoffgen.sv", "/home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/CDiv.vhd", "/home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/CSR.sv", "/home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Control_majumder_backup.sv", "/home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/DB.vhd", "/home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Debug_Display.sv", "/home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Decode.sv", "/home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Execute.sv", "/home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/FIFO_32I8O.vhd", "/home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/FIFO_8I32O.vhd", "/home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Fetch.sv", "/home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Fetch_Reprogrammable.sv", "/home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Forwarding.sv", "/home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Hazard.sv", "/home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/IRAM_Controller.sv", "/home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Immgen.sv", "/home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Memory.sv", "/home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Memory_Controller.sv", "/home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Memory_byteaddress.sv", "/home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Memory_ff.sv", "/home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/RISCVcore.sv", "/home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/RISCVcore_uart.sv", "/home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Regfile.sv", "/home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/SingPul.vhd", "/home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Timer.sv", "/home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/UART_Programmer.sv", "/home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Writeback.sv", "/home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/branchforward.sv", "/home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/compare.sv", "/home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/rv_top.sv", "/home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/rv_uart_top.sv", "/home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/tx_control.sv", "/home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/uart_controller.sv", "/home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/uart_rx6.vhd", "/home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/uart_tx6.vhd"};
+setFileChooser(filenames31467);
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 13 seconds
+dismissDialog("Add Sources"); // c (cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 119 MB (+7336kb) [00:54:47]
+// [Engine Memory]: 997 MB (+18485kb) [00:54:52]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, Timer.sv]", 2, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, Timer.sv]", 2, false, false, false, false, true, false); // B (F, cl) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ae (an, cl)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ae (an, cl)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ae (an, cl)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ae (an, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, Timer.sv]", 3, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, Timer.sv]", 2, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, Timer.sv]", 2, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, Timer.sv]", 2, false, false, false, false, true, false); // B (F, cl) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ah (an, cl)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// aE (cl): Remove Sources: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aE)
+dismissDialog("Remove Sources"); // aE (cl)
+// Tcl Message: export_ip_user_files -of_objects  [get_files /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Timer.sv] -no_script -reset -force -quiet 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Timer.sv 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, Timer.sv]", 2, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, Timer.sv]", 2, false, false, false, false, false, true); // B (F, cl) - Double Click
+// k (cl): Text Changed: addNotify
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B (k, cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,032 MB. GUI used memory: 54 MB. Current time: 4/1/20, 1:57:43 PM EDT
+selectButton(RDIResource.ConfirmSaveTextEditsDialog_YES, "Yes"); // a (k)
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Text Changed"); // k (cl)
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, Timer.sv]", 2, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, Timer.sv]", 2, false, false, false, false, false, true); // B (F, cl) - Double Click
+// [Engine Memory]: 1,049 MB (+1605kb) [00:55:24]
+// Elapsed time: 348 seconds
+selectCodeEditor("Timer.sv", 202, 268); // cl (w, cl)
+// Elapsed time: 136 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, tb_rvtop (tb_rvtop.sv), dut : rv_top (rv_uart_top.sv)]", 10, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, tb_rvtop (tb_rvtop.sv), dut : rv_top (rv_uart_top.sv), d0 : Debug_Display (Debug_Display.sv)]", 13, true, false, false, false, false, true); // B (F, cl) - Double Click - Node
+// HMemoryUtils.trashcanNow. Engine heap size: 1,056 MB. GUI used memory: 55 MB. Current time: 4/1/20, 2:05:58 PM EDT
+// Elapsed time: 40 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, tb_rvtop (tb_rvtop.sv), dut : rv_top (rv_uart_top.sv), memcon0 : Memory_Controller (Memory_Controller.sv)]", 12, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, tb_rvtop (tb_rvtop.sv), dut : rv_top (rv_uart_top.sv), memcon0 : Memory_Controller (Memory_Controller.sv)]", 12, true, false, false, false, false, true); // B (F, cl) - Double Click - Node
+selectCodeEditor("Memory_Controller.sv", 149, 204); // cl (w, cl)
+selectCodeEditor("Memory_Controller.sv", 149, 204); // cl (w, cl)
+selectCodeEditor("Memory_Controller.sv", 149, 204); // cl (w, cl)
+selectCodeEditor("Memory_Controller.sv", 149, 204); // cl (w, cl)
+selectCodeEditor("Memory_Controller.sv", 149, 204); // cl (w, cl)
+selectCodeEditor("Memory_Controller.sv", 149, 204); // cl (w, cl)
+selectCodeEditor("Memory_Controller.sv", 149, 204); // cl (w, cl)
+selectCodeEditor("Memory_Controller.sv", 149, 204); // cl (w, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, tb_rvtop (tb_rvtop.sv), dut : rv_top (rv_uart_top.sv), memcon0 : Memory_Controller (Memory_Controller.sv), sharedmem : blk_mem_gen_1 (blk_mem_gen_1.xci)]", 13, false); // B (F, cl)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, tb_rvtop (tb_rvtop.sv), dut : rv_top (rv_uart_top.sv), memcon0 : Memory_Controller (Memory_Controller.sv), sharedmem : blk_mem_gen_1 (blk_mem_gen_1.xci)]", 13, false, false, false, false, false, true); // B (F, cl) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// TclEventType: LOAD_FEATURE
+// O (cl):  Re-customize IP : addNotify
+// r (cl): Re-customize IP: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1423 ms.
+dismissDialog("Re-customize IP"); // O (cl)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Port B Options", 2); // bg (E, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Other Options", 3); // bg (E, r)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (r)
+dismissDialog("Re-customize IP"); // r (cl)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// al (cl): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (al)
+// by (cl):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+// by (cl):  Resetting Runs : addNotify
+dismissDialog("Save Project"); // al (cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_MODIFY
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_MODIFY
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (cl): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// by (cl):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cl)
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: launch_runs synth_1 -jobs 2 
+// Tcl Message: INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP blk_mem_gen_0, cache-ID = 6098b50319847a81; cache size = 1.057 MB. 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// [Engine Memory]: 1,124 MB (+24042kb) [01:04:45]
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: [Wed Apr  1 14:07:10 2020] Launched synth_1... Run output will be captured here: /home/sabuj/vivado_new/MiniRISCV/MiniRISCV.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 6 seconds
+dismissDialog("Starting Design Runs"); // by (cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,154 MB. GUI used memory: 60 MB. Current time: 4/1/20, 2:07:13 PM EDT
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ah (cl): Synthesis Failed: addNotify
+// Elapsed time: 26 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ah (cl)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sources_1, [HDL 9-806] Syntax error near posedge. [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Timer.sv:41]. ]", 2, true); // ah (O, cl) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Timer.sv;-;;-;16;-;line;-;41;-;;-;16;-;"); // ah (O, cl)
+// Elapsed time: 44 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "cnt", true); // l (aT, cl)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "cnt"); // l (aT, cl)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "cnt"); // l (aT, cl)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "cnt"); // l (aT, cl)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "cnt"); // l (aT, cl)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "cnt"); // l (aT, cl)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "cnt"); // l (aT, cl)
+applyEnter(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "cnt"); // l (aT, cl)
+// Elapsed time: 29 seconds
+selectCodeEditor("Timer.sv", 231, 159); // cl (w, cl)
+selectCodeEditor("Timer.sv", 401, 160); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 10 seconds
+selectCodeEditor("Timer.sv", 280, 210); // cl (w, cl)
+selectCodeEditor("Timer.sv", 280, 210); // cl (w, cl)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// by (cl):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cl): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// by (cl):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: launch_runs synth_1 -jobs 2 
+// Tcl Message: INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP blk_mem_gen_0, cache-ID = 6098b50319847a81; cache size = 1.057 MB. 
+// Tcl Message: [Wed Apr  1 14:09:31 2020] Launched synth_1... Run output will be captured here: /home/sabuj/vivado_new/MiniRISCV/MiniRISCV.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 3 seconds
+dismissDialog("Starting Design Runs"); // by (cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,176 MB. GUI used memory: 61 MB. Current time: 4/1/20, 2:09:33 PM EDT
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ah (cl): Synthesis Failed: addNotify
+// Elapsed time: 24 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ah (cl)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Synth 8-439] module 'shift_right_chaos' not found [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/chaos/ALU_chaos.sv:47]. ]", 2, false); // ah (O, cl)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/chaos/ALU_chaos.sv;-;;-;16;-;line;-;47;-;;-;16;-;"); // ah (O, cl)
+// Elapsed time: 25 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, tb_rvtop (tb_rvtop.sv), dut : rv_top (rv_uart_top.sv), rv_core : RISCVcore_uart (RISCVcore_uart.sv), u3 : Execute (Execute.sv), uut : ALU (ALU.sv)]", 15, true); // B (F, cl) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, tb_rvtop (tb_rvtop.sv), dut : rv_top (rv_uart_top.sv), rv_core : RISCVcore_uart (RISCVcore_uart.sv), u3 : Execute (Execute.sv), uut : ALU (ALU.sv)]", 15, true, false, false, false, false, true); // B (F, cl) - Double Click - Node
+// [Engine Memory]: 1,181 MB (+965kb) [01:08:05]
+// Elapsed time: 14 seconds
+selectCodeEditor("ALU.sv", 30, 140); // cl (w, cl)
+selectCodeEditor("ALU.sv", 20, 25); // cl (w, cl)
+selectCodeEditor("ALU.sv", 149, 186); // cl (w, cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,209 MB. GUI used memory: 59 MB. Current time: 4/1/20, 2:11:03 PM EDT
+// Elapsed time: 17 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// by (cl):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cl): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// by (cl):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: launch_runs synth_1 -jobs 2 
+// Tcl Message: INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP blk_mem_gen_0, cache-ID = 6098b50319847a81; cache size = 1.057 MB. 
+// Tcl Message: [Wed Apr  1 14:11:10 2020] Launched synth_1... Run output will be captured here: /home/sabuj/vivado_new/MiniRISCV/MiniRISCV.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // by (cl)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ah (cl): Synthesis Completed: addNotify
+// Elapsed time: 85 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// f (cl): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// by (cl):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cl)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: launch_runs impl_2 -jobs 2 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP blk_mem_gen_0, cache-ID = 6098b50319847a81; cache size = 1.057 MB. 
+// Tcl Message: [Wed Apr  1 14:12:39 2020] Launched impl_2... Run output will be captured here: /home/sabuj/vivado_new/MiniRISCV/MiniRISCV.runs/impl_2/runme.log 
+// 'c' command handler elapsed time: 3 seconds
+dismissDialog("Starting Design Runs"); // by (cl)
+// TclEventType: RUN_STATUS_CHANGE
+// [Engine Memory]: 1,244 MB (+4039kb) [01:10:16]
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ah (cl): Implementation Completed: addNotify
+// Elapsed time: 95 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// by (cl):  Open Implemented Design : addNotify
+// Tcl Message: open_run impl_2 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,333 MB. GUI used memory: 63 MB. Current time: 4/1/20, 2:14:18 PM EDT
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_CNS_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 2,017 MB. GUI used memory: 62 MB. Current time: 4/1/20, 2:14:29 PM EDT
+// [Engine Memory]: 2,017 MB (+745281kb) [01:12:04]
+// TclEventType: DESIGN_NEW
+// [Engine Memory]: 2,172 MB (+55951kb) [01:12:06]
+// Xgd.load filename: /home/sabuj/Vivado2019/Vivado/2019.1/data/parts/xilinx/artix7/devint/artix7/xc7a100t/xc7a100t.xgd; ZipEntry: xc7a100t_detail.xgd elapsed time: 1.3s
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 1.9s
+// Device: addNotify
+// [GUI Memory]: 129 MB (+4966kb) [01:12:08]
+// DeviceView Instantiated
+// WARNING: HEventQueue.dispatchEvent() is taking  3412 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Device 21-403] Loading part xc7a100tcsg324-1 INFO: [Netlist 29-17] Analyzing 774 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2019.1 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Constraints 18-5170] The checkpoint was created with non-default parameter values which do not match the current Vivado settings.  Mismatching parameters are: 
+// Tcl Message:   general.maxThreads 
+// Tcl Message: INFO: [Project 1-853] Binary constraint restore complete. 
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:00.35 ; elapsed = 00:00:00.34 . Memory (MB): peak = 7605.695 ; gain = 5.004 ; free physical = 1596 ; free virtual = 6755 
+// Tcl Message: Restored from archive | CPU: 0.350000 secs | Memory: 6.017059 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:00.35 ; elapsed = 00:00:00.34 . Memory (MB): peak = 7605.695 ; gain = 5.004 ; free physical = 1596 ; free virtual = 6755 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 7605.695 ; gain = 0.000 ; free physical = 1597 ; free virtual = 6755 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary:   A total of 19 instances were transformed.   LUT6_2 => LUT6_2 (LUT5, LUT6): 19 instances  
+// TclEventType: DRC_ADDED
+// Device view-level: 0.0
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Tcl Message: open_run: Time (s): cpu = 00:00:26 ; elapsed = 00:00:18 . Memory (MB): peak = 7788.371 ; gain = 926.566 ; free physical = 1500 ; free virtual = 6662 
+// TclEventType: DRC_ADDED
+// TclEventType: METHODOLOGY_ADDED
+// TclEventType: POWER_UPDATED
+// [GUI Memory]: 138 MB (+2386kb) [01:12:10]
+// [GUI Memory]: 148 MB (+3207kb) [01:12:10]
+// [GUI Memory]: 156 MB (+330kb) [01:12:11]
+// WARNING: HEventQueue.dispatchEvent() is taking  1909 ms.
+// TclEventType: TIMING_SUMMARY_UPDATED
+// WARNING: HEventQueue.dispatchEvent() is taking  2431 ms.
+// [GUI Memory]: 166 MB (+2720kb) [01:12:14]
+// 'dR' command handler elapsed time: 24 seconds
+// Elapsed time: 25 seconds
+dismissDialog("Open Implemented Design"); // by (cl)
+// [GUI Memory]: 175 MB (+292kb) [01:12:38]
+// Elapsed time: 24 seconds
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 309320, 475801); // D (I, cl)
+// Device select: 'Tile - CLBLM_R_X43Y64'
+selectView(PAResourceOtoP.PAViews_DEVICE, "Device", 343, 163, 623, 280); // U (k, cl)
+// PAPropertyPanels.initPanels (Tile: CLBLM_R_X43Y64) elapsed time: 0.3s
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 309320, 475801, false, false, false, false, true); // D (I, cl) - Double Click
+// Device select: 'Tile - CLBLM_R_X43Y64'
+selectView(PAResourceOtoP.PAViews_DEVICE, "Device", 343, 163, 623, 280); // U (k, cl)
+// PAPropertyPanels.initPanels (Clock Region: X1Y1) elapsed time: 0.2s
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 461110, 548777); // D (I, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Timer.sv", 2); // k (j, cl)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Device", 1); // k (j, cl)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 31, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cl): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// by (cl):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // A (cl)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,192 MB. GUI used memory: 117 MB. Current time: 4/1/20, 2:15:17 PM EDT
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (cl): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cx' command handler elapsed time: 11 seconds
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Launch Runs"); // f (cl)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// by (cl):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_2 -to_step write_bitstream -jobs 2 
+// Tcl Message: INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP blk_mem_gen_0, cache-ID = 6098b50319847a81; cache size = 1.057 MB. 
+// Tcl Message: [Wed Apr  1 14:15:24 2020] Launched synth_1... Run output will be captured here: /home/sabuj/vivado_new/MiniRISCV/MiniRISCV.runs/synth_1/runme.log [Wed Apr  1 14:15:24 2020] Launched impl_2... Run output will be captured here: /home/sabuj/vivado_new/MiniRISCV/MiniRISCV.runs/impl_2/runme.log 
+dismissDialog("Generate Bitstream"); // by (cl)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// ah (cl): Bitstream Generation Completed: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 2,209 MB. GUI used memory: 117 MB. Current time: 4/1/20, 2:45:18 PM EDT
+// WARNING: HEventQueue.dispatchEvent() is taking  7451 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,209 MB. GUI used memory: 112 MB. Current time: 4/1/20, 3:15:21 PM EDT
+// WARNING: HEventQueue.dispatchEvent() is taking  1843 ms.
+// Elapsed time: 3757 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// by (cl):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// WARNING: HEventQueue.dispatchEvent() is taking  1535 ms.
+// Tcl Message: open_hw 
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+dismissDialog("Open Hardware Manager"); // by (cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,240 MB. GUI used memory: 115 MB. Current time: 4/1/20, 3:18:09 PM EDT
+// Elapsed time: 101 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (cS, cl)
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (cS, cl)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ah (an, cl)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 INFO: [Labtools 27-2222] Launching hw_server... 
+// by (cl):  Auto Connect : addNotify
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2019.1   **** Build date : May 24 2019 at 15:06:40     ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// WARNING: HEventQueue.dispatchEvent() is taking  2434 ms.
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210274592712A 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/sabuj/Downloads/rv_top.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0). 
+// [Engine Memory]: 3,198 MB (+962337kb) [02:17:27]
+dismissDialog("Auto Connect"); // by (cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,205 MB. GUI used memory: 115 MB. Current time: 4/1/20, 3:19:54 PM EDT
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cS, cl)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cl): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// by (cl):  Program Device : addNotify
+dismissDialog("Program Device"); // bC (cl)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/sabuj/Downloads/rv_top.bit} [get_hw_devices xc7a100t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a100t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 6 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h
+dismissDialog("Program Device"); // by (cl)

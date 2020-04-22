@@ -73,7 +73,7 @@ interface mmio_bus (
     
 endinterface
 
-module rv_top
+module rv_uart_top
  (input  logic       clk,
   input  logic       Rst,
   input  logic       debug,
@@ -91,7 +91,7 @@ module rv_top
 
   logic [31:0] debug_output;
   logic [3:0]  seg_cur, seg_nxt;
-  logic        clk_50M, clk_5M;// clk_disp;
+  logic        clk_50M, clk_5M,clk_7seg;// clk_disp;
   logic addr_dn, addr_up;
   //clock divider variable
 //  integer      count;
@@ -112,14 +112,14 @@ assign key[11:0]=12'h3cf;
 //  logic [3:0] mem_en;
 //  logic [11:0] mem_addr;
 //  logic [31:0] mem_din, mem_dout;
-//`ifdef SYNTHESIS
+//`ifndef SYNTHESIS
 clk_wiz_0 c0(.*);
-  riscv_bus rbus(.clk(clk_50M), .*);
-  mmio_bus mbus(.clk(clk_50M), .BR_clk(clk), .*);
-  
+ riscv_bus rbus(.clk(clk_50M), .*);
+  mmio_bus mbus(.clk(clk_50M),  .*);
+clk_div cdiv(clk,Rst,16'd500,clk_7seg);  
 //`else
 // riscv_bus rbus(.*);
-//  mmio_bus mbus(.*);
+// mmio_bus mbus(.*);
 //`endif
   
   assign led = {14'h0, mbus.tx_full, mbus.rx_data_present};
@@ -170,7 +170,7 @@ clk_wiz_0 c0(.*);
 //  assign led = debug_output[15:0];
   assign clk_out = clk_50M;
   
-  always_ff @(posedge clk_5M) begin
+  always_ff @(posedge clk_7seg) begin
     if (Rst) begin
       an_cur <= a0;
       seg_cur <= debug_output[3:0];
@@ -259,5 +259,5 @@ clk_wiz_0 c0(.*);
 //            end
 //        end
 //    end
-endmodule: rv_top
+endmodule: rv_uart_top
 			  

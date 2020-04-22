@@ -1,0 +1,592 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Apr  1 13:02:18 2020
+# Process ID: 7510
+# Current directory: /home/sabuj/Mini-Risc-V-Uart-Srcs
+# Command line: vivado
+# Log file: /home/sabuj/Mini-Risc-V-Uart-Srcs/vivado.log
+# Journal file: /home/sabuj/Mini-Risc-V-Uart-Srcs/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/sabuj/vivado_new/MiniRISCV/MiniRISCV.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/sabuj/Vivado2019/Vivado/2019.1/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'blk_mem_gen_0' is locked:
+* Current project part 'xc7a100tcsg324-1' and the part 'xc7k70tfbv676-1' used to customize the IP 'blk_mem_gen_0' do not match.
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:10 . Memory (MB): peak = 6401.266 ; gain = 70.730 ; free physical = 2564 ; free virtual = 7447
+update_compile_order -fileset sources_1
+add_files -norecurse {/home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/IRAM_Controller.sv /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/uart_tx6.vhd /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/FIFO_8I32O.vhd /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Control_majumder_backup.sv /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/DB.vhd /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Fetch_Reprogrammable.sv /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Branoffgen.sv /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Decode.sv /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/RISCVcore_uart.sv /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Debug_Display.sv /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Brachdecision.sv /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/ALU.sv /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Forwarding.sv /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Memory.sv /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Hazard.sv /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/UART_Programmer.sv /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Timer.sv /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/compare.sv /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/CSR.sv /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/uart_rx6.vhd /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Addressable_FIFO.sv /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Immgen.sv /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/RISCVcore.sv /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/branchforward.sv /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Fetch.sv /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/uart_controller.sv /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/CDiv.vhd /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Memory_ff.sv /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/rv_uart_top.sv /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/rv_top.sv /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/tx_control.sv /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Memory_byteaddress.sv /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Memory_Controller.sv /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Writeback.sv /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/SingPul.vhd /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Regfile.sv /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/FIFO_32I8O.vhd /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Execute.sv}
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Timer.sv] -no_script -reset -force -quiet
+remove_files  /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Timer.sv
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP blk_mem_gen_0, cache-ID = 6098b50319847a81; cache size = 1.057 MB.
+WARNING: [Vivado 12-4801] The synthesis checkpoint for IP '/home/sabuj/vivado_new/MiniRISCV/MiniRISCV.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci' is available but stale and the IP is locked. An out-of-context (OOC) run will be created and/or launched, but synthesis may not be able to complete or could result in incorrect behavior.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [HDL 9-3756] overwriting previous definition of module 'ALU' [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/ALU.sv:55]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'Addressable_FIFO' [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Addressable_FIFO.sv:3]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'Branchdecision' [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Brachdecision.sv:28]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'Branoffgen' [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Branoffgen.sv:26]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'CSR' [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/CSR.sv:3]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'Control' [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Control_majumder_backup.sv:44]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'Debug_Display' [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Debug_Display.sv:3]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'Decode' [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Decode.sv:58]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'Execute' [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Execute.sv:58]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'Fetch' [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Fetch.sv:30]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'Fetch_Reprogrammable' [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Fetch_Reprogrammable.sv:39]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'Forwarding' [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Forwarding.sv:35]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'Hazard' [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Hazard.sv:31]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'IRAM_Controller' [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/IRAM_Controller.sv:36]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'Immgen' [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Immgen.sv:25]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'Memory' [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Memory.sv:36]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'Memory_Controller' [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Memory_Controller.sv:3]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'Memory_byteaddress' [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Memory_byteaddress.sv:23]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'Memory_ff' [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Memory_ff.sv:23]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'RISCVcore' [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/RISCVcore.sv:27]
+WARNING: [HDL 9-3756] overwriting previous definition of interface 'main_bus' [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/RISCVcore_uart.sv:27]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'RISCVcore_uart' [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/RISCVcore_uart.sv:205]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'Regfile' [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Regfile.sv:34]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "posedge". [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Timer.sv:41]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "<=". [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Timer.sv:46]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'UART_Programmer' [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/UART_Programmer.sv:28]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'Writeback' [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Writeback.sv:26]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'branchforward' [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/branchforward.sv:34]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'compare' [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/compare.sv:23]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'rv_top' [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/rv_top.sv:2]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'rv_top' [/home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/rv_uart_top.sv:71]
+WARNING: [HDL 9-3756] overwriting previous definition of interface 'riscv_bus' [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/rv_uart_top.sv:3]
+WARNING: [HDL 9-3756] overwriting previous definition of interface 'mmio_bus' [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/rv_uart_top.sv:34]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'rv_top' [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/rv_uart_top.sv:71]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'tx_control' [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/tx_control.sv:3]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'uart_controller' [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/uart_controller.sv:23]
+WARNING: [filemgmt 20-736] The current top specification, "rv_top", does not uniquely identify a single design element. Using "rv_top" (Library: xil_defaultlib, File: /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/rv_uart_top.sv).
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'ALU()' found in library 'xil_defaultlib'
+Duplicate found at line 55 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/ALU.sv
+	(Active) Duplicate found at line 55 of file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/ALU.sv
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'Addressable_FIFO()' found in library 'xil_defaultlib'
+Duplicate found at line 3 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Addressable_FIFO.sv
+	(Active) Duplicate found at line 3 of file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Addressable_FIFO.sv
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'Branchdecision()' found in library 'xil_defaultlib'
+Duplicate found at line 28 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Brachdecision.sv
+	(Active) Duplicate found at line 28 of file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Brachdecision.sv
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'Branoffgen()' found in library 'xil_defaultlib'
+Duplicate found at line 26 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Branoffgen.sv
+	(Active) Duplicate found at line 26 of file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Branoffgen.sv
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'CSR()' found in library 'xil_defaultlib'
+Duplicate found at line 3 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/CSR.sv
+	(Active) Duplicate found at line 3 of file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/CSR.sv
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'Control()' found in library 'xil_defaultlib'
+Duplicate found at line 44 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Control_majumder_backup.sv
+	(Active) Duplicate found at line 44 of file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Control_majumder_backup.sv
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'Debug_Display()' found in library 'xil_defaultlib'
+Duplicate found at line 3 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Debug_Display.sv
+	(Active) Duplicate found at line 3 of file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Debug_Display.sv
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'Decode()' found in library 'xil_defaultlib'
+Duplicate found at line 58 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Decode.sv
+	(Active) Duplicate found at line 58 of file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Decode.sv
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'Execute()' found in library 'xil_defaultlib'
+Duplicate found at line 58 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Execute.sv
+	(Active) Duplicate found at line 58 of file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Execute.sv
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'Fetch()' found in library 'xil_defaultlib'
+Duplicate found at line 30 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Fetch.sv
+	(Active) Duplicate found at line 30 of file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Fetch.sv
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'Fetch_Reprogrammable()' found in library 'xil_defaultlib'
+Duplicate found at line 39 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Fetch_Reprogrammable.sv
+	(Active) Duplicate found at line 39 of file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Fetch_Reprogrammable.sv
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'Forwarding()' found in library 'xil_defaultlib'
+Duplicate found at line 35 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Forwarding.sv
+	(Active) Duplicate found at line 35 of file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Forwarding.sv
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'Hazard()' found in library 'xil_defaultlib'
+Duplicate found at line 31 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Hazard.sv
+	(Active) Duplicate found at line 31 of file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Hazard.sv
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'IRAM_Controller()' found in library 'xil_defaultlib'
+Duplicate found at line 36 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/IRAM_Controller.sv
+	(Active) Duplicate found at line 36 of file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/IRAM_Controller.sv
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'Immgen()' found in library 'xil_defaultlib'
+Duplicate found at line 25 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Immgen.sv
+	(Active) Duplicate found at line 25 of file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Immgen.sv
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'Memory()' found in library 'xil_defaultlib'
+Duplicate found at line 36 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Memory.sv
+	(Active) Duplicate found at line 36 of file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Memory.sv
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'Memory_Controller()' found in library 'xil_defaultlib'
+Duplicate found at line 3 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Memory_Controller.sv
+	(Active) Duplicate found at line 3 of file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Memory_Controller.sv
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'Memory_byteaddress()' found in library 'xil_defaultlib'
+Duplicate found at line 23 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Memory_byteaddress.sv
+	(Active) Duplicate found at line 23 of file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Memory_byteaddress.sv
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'Memory_ff()' found in library 'xil_defaultlib'
+Duplicate found at line 23 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Memory_ff.sv
+	(Active) Duplicate found at line 23 of file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Memory_ff.sv
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'RISCVcore()' found in library 'xil_defaultlib'
+Duplicate found at line 27 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/RISCVcore.sv
+	(Active) Duplicate found at line 27 of file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/RISCVcore.sv
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'main_bus()' found in library 'xil_defaultlib'
+Duplicate found at line 27 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/RISCVcore_uart.sv
+	(Active) Duplicate found at line 27 of file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/RISCVcore_uart.sv
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'RISCVcore_uart()' found in library 'xil_defaultlib'
+Duplicate found at line 205 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/RISCVcore_uart.sv
+	(Active) Duplicate found at line 205 of file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/RISCVcore_uart.sv
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'Regfile()' found in library 'xil_defaultlib'
+Duplicate found at line 34 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Regfile.sv
+	(Active) Duplicate found at line 34 of file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Regfile.sv
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'UART_Programmer()' found in library 'xil_defaultlib'
+Duplicate found at line 28 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/UART_Programmer.sv
+	(Active) Duplicate found at line 28 of file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/UART_Programmer.sv
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'Writeback()' found in library 'xil_defaultlib'
+Duplicate found at line 26 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Writeback.sv
+	(Active) Duplicate found at line 26 of file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Writeback.sv
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'branchforward()' found in library 'xil_defaultlib'
+Duplicate found at line 34 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/branchforward.sv
+	(Active) Duplicate found at line 34 of file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/branchforward.sv
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'compare()' found in library 'xil_defaultlib'
+Duplicate found at line 23 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/compare.sv
+	(Active) Duplicate found at line 23 of file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/compare.sv
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'rv_top()' found in library 'xil_defaultlib'
+Duplicate found at line 2 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/rv_top.sv
+Duplicate found at line 2 of file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/rv_top.sv
+Duplicate found at line 71 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/rv_uart_top.sv
+	(Active) Duplicate found at line 71 of file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/rv_uart_top.sv
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'riscv_bus()' found in library 'xil_defaultlib'
+Duplicate found at line 3 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/rv_uart_top.sv
+	(Active) Duplicate found at line 3 of file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/rv_uart_top.sv
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'mmio_bus()' found in library 'xil_defaultlib'
+Duplicate found at line 34 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/rv_uart_top.sv
+	(Active) Duplicate found at line 34 of file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/rv_uart_top.sv
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'tx_control()' found in library 'xil_defaultlib'
+Duplicate found at line 3 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/tx_control.sv
+	(Active) Duplicate found at line 3 of file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/tx_control.sv
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'uart_controller()' found in library 'xil_defaultlib'
+Duplicate found at line 23 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/uart_controller.sv
+	(Active) Duplicate found at line 23 of file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/uart_controller.sv
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'CDiv(Behavior)' found in library 'xil_defaultlib'
+	(Active) Duplicate found at line 11 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/CDiv.vhd
+Duplicate found in file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/CDiv.vhd
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'DB(Behavioral)' found in library 'xil_defaultlib'
+	(Active) Duplicate found at line 31 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/DB.vhd
+Duplicate found in file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/DB.vhd
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'FIFO_32I8O(behavioral)' found in library 'xil_defaultlib'
+	(Active) Duplicate found at line 23 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/FIFO_32I8O.vhd
+Duplicate found in file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/FIFO_32I8O.vhd
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'FIFO_8I32O(behavioral)' found in library 'xil_defaultlib'
+	(Active) Duplicate found at line 24 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/FIFO_8I32O.vhd
+Duplicate found in file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/FIFO_8I32O.vhd
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'SingPul(onepulse)' found in library 'xil_defaultlib'
+	(Active) Duplicate found at line 13 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/SingPul.vhd
+Duplicate found in file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/SingPul.vhd
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'uart_rx6(low_level_definition)' found in library 'xil_defaultlib'
+	(Active) Duplicate found at line 100 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/uart_rx6.vhd
+Duplicate found in file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/uart_rx6.vhd
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'uart_tx6(low_level_definition)' found in library 'xil_defaultlib'
+	(Active) Duplicate found at line 100 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/uart_tx6.vhd
+Duplicate found in file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/uart_tx6.vhd
+WARNING: [Runs 36-337] The following IPs are either missing output products or output products are not up-to-date for Synthesis target. Since these IPs are locked, no update to the output products can be done. 
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+/home/sabuj/vivado_new/MiniRISCV/MiniRISCV.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci
+
+[Wed Apr  1 14:07:10 2020] Launched synth_1...
+Run output will be captured here: /home/sabuj/vivado_new/MiniRISCV/MiniRISCV.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP blk_mem_gen_0, cache-ID = 6098b50319847a81; cache size = 1.057 MB.
+WARNING: [Vivado 12-4801] The synthesis checkpoint for IP '/home/sabuj/vivado_new/MiniRISCV/MiniRISCV.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci' is available but stale and the IP is locked. An out-of-context (OOC) run will be created and/or launched, but synthesis may not be able to complete or could result in incorrect behavior.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [HDL 9-3756] overwriting previous definition of module 'ALU' [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/ALU.sv:55]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'Addressable_FIFO' [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Addressable_FIFO.sv:3]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'Branchdecision' [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Brachdecision.sv:28]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'Branoffgen' [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Branoffgen.sv:26]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'CSR' [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/CSR.sv:3]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'Control' [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Control_majumder_backup.sv:44]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'Debug_Display' [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Debug_Display.sv:3]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'Decode' [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Decode.sv:58]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'Execute' [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Execute.sv:58]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'Fetch' [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Fetch.sv:30]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'Fetch_Reprogrammable' [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Fetch_Reprogrammable.sv:39]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'Forwarding' [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Forwarding.sv:35]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'Hazard' [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Hazard.sv:31]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'IRAM_Controller' [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/IRAM_Controller.sv:36]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'Immgen' [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Immgen.sv:25]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'Memory' [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Memory.sv:36]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'Memory_Controller' [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Memory_Controller.sv:3]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'Memory_byteaddress' [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Memory_byteaddress.sv:23]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'Memory_ff' [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Memory_ff.sv:23]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'RISCVcore' [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/RISCVcore.sv:27]
+WARNING: [HDL 9-3756] overwriting previous definition of interface 'main_bus' [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/RISCVcore_uart.sv:27]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'RISCVcore_uart' [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/RISCVcore_uart.sv:205]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'Regfile' [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Regfile.sv:34]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'UART_Programmer' [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/UART_Programmer.sv:28]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'Writeback' [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Writeback.sv:26]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'branchforward' [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/branchforward.sv:34]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'compare' [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/compare.sv:23]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'rv_top' [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/rv_top.sv:2]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'rv_top' [/home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/rv_uart_top.sv:71]
+WARNING: [HDL 9-3756] overwriting previous definition of interface 'riscv_bus' [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/rv_uart_top.sv:3]
+WARNING: [HDL 9-3756] overwriting previous definition of interface 'mmio_bus' [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/rv_uart_top.sv:34]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'rv_top' [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/rv_uart_top.sv:71]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'tx_control' [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/tx_control.sv:3]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'uart_controller' [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/uart_controller.sv:23]
+WARNING: [filemgmt 20-736] The current top specification, "rv_top", does not uniquely identify a single design element. Using "rv_top" (Library: xil_defaultlib, File: /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/rv_uart_top.sv).
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'ALU()' found in library 'xil_defaultlib'
+Duplicate found at line 55 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/ALU.sv
+	(Active) Duplicate found at line 55 of file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/ALU.sv
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'Addressable_FIFO()' found in library 'xil_defaultlib'
+Duplicate found at line 3 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Addressable_FIFO.sv
+	(Active) Duplicate found at line 3 of file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Addressable_FIFO.sv
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'Branchdecision()' found in library 'xil_defaultlib'
+Duplicate found at line 28 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Brachdecision.sv
+	(Active) Duplicate found at line 28 of file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Brachdecision.sv
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'Branoffgen()' found in library 'xil_defaultlib'
+Duplicate found at line 26 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Branoffgen.sv
+	(Active) Duplicate found at line 26 of file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Branoffgen.sv
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'CSR()' found in library 'xil_defaultlib'
+Duplicate found at line 3 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/CSR.sv
+	(Active) Duplicate found at line 3 of file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/CSR.sv
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'Control()' found in library 'xil_defaultlib'
+Duplicate found at line 44 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Control_majumder_backup.sv
+	(Active) Duplicate found at line 44 of file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Control_majumder_backup.sv
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'Debug_Display()' found in library 'xil_defaultlib'
+Duplicate found at line 3 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Debug_Display.sv
+	(Active) Duplicate found at line 3 of file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Debug_Display.sv
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'Decode()' found in library 'xil_defaultlib'
+Duplicate found at line 58 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Decode.sv
+	(Active) Duplicate found at line 58 of file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Decode.sv
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'Execute()' found in library 'xil_defaultlib'
+Duplicate found at line 58 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Execute.sv
+	(Active) Duplicate found at line 58 of file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Execute.sv
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'Fetch()' found in library 'xil_defaultlib'
+Duplicate found at line 30 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Fetch.sv
+	(Active) Duplicate found at line 30 of file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Fetch.sv
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'Fetch_Reprogrammable()' found in library 'xil_defaultlib'
+Duplicate found at line 39 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Fetch_Reprogrammable.sv
+	(Active) Duplicate found at line 39 of file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Fetch_Reprogrammable.sv
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'Forwarding()' found in library 'xil_defaultlib'
+Duplicate found at line 35 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Forwarding.sv
+	(Active) Duplicate found at line 35 of file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Forwarding.sv
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'Hazard()' found in library 'xil_defaultlib'
+Duplicate found at line 31 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Hazard.sv
+	(Active) Duplicate found at line 31 of file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Hazard.sv
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'IRAM_Controller()' found in library 'xil_defaultlib'
+Duplicate found at line 36 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/IRAM_Controller.sv
+	(Active) Duplicate found at line 36 of file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/IRAM_Controller.sv
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'Immgen()' found in library 'xil_defaultlib'
+Duplicate found at line 25 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Immgen.sv
+	(Active) Duplicate found at line 25 of file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Immgen.sv
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'Memory()' found in library 'xil_defaultlib'
+Duplicate found at line 36 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Memory.sv
+	(Active) Duplicate found at line 36 of file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Memory.sv
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'Memory_Controller()' found in library 'xil_defaultlib'
+Duplicate found at line 3 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Memory_Controller.sv
+	(Active) Duplicate found at line 3 of file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Memory_Controller.sv
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'Memory_byteaddress()' found in library 'xil_defaultlib'
+Duplicate found at line 23 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Memory_byteaddress.sv
+	(Active) Duplicate found at line 23 of file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Memory_byteaddress.sv
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'Memory_ff()' found in library 'xil_defaultlib'
+Duplicate found at line 23 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Memory_ff.sv
+	(Active) Duplicate found at line 23 of file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Memory_ff.sv
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'RISCVcore()' found in library 'xil_defaultlib'
+Duplicate found at line 27 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/RISCVcore.sv
+	(Active) Duplicate found at line 27 of file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/RISCVcore.sv
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'main_bus()' found in library 'xil_defaultlib'
+Duplicate found at line 27 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/RISCVcore_uart.sv
+	(Active) Duplicate found at line 27 of file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/RISCVcore_uart.sv
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'RISCVcore_uart()' found in library 'xil_defaultlib'
+Duplicate found at line 205 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/RISCVcore_uart.sv
+	(Active) Duplicate found at line 205 of file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/RISCVcore_uart.sv
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'Regfile()' found in library 'xil_defaultlib'
+Duplicate found at line 34 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Regfile.sv
+	(Active) Duplicate found at line 34 of file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Regfile.sv
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'UART_Programmer()' found in library 'xil_defaultlib'
+Duplicate found at line 28 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/UART_Programmer.sv
+	(Active) Duplicate found at line 28 of file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/UART_Programmer.sv
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'Writeback()' found in library 'xil_defaultlib'
+Duplicate found at line 26 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Writeback.sv
+	(Active) Duplicate found at line 26 of file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Writeback.sv
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'branchforward()' found in library 'xil_defaultlib'
+Duplicate found at line 34 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/branchforward.sv
+	(Active) Duplicate found at line 34 of file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/branchforward.sv
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'compare()' found in library 'xil_defaultlib'
+Duplicate found at line 23 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/compare.sv
+	(Active) Duplicate found at line 23 of file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/compare.sv
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'rv_top()' found in library 'xil_defaultlib'
+Duplicate found at line 2 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/rv_top.sv
+Duplicate found at line 2 of file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/rv_top.sv
+Duplicate found at line 71 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/rv_uart_top.sv
+	(Active) Duplicate found at line 71 of file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/rv_uart_top.sv
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'riscv_bus()' found in library 'xil_defaultlib'
+Duplicate found at line 3 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/rv_uart_top.sv
+	(Active) Duplicate found at line 3 of file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/rv_uart_top.sv
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'mmio_bus()' found in library 'xil_defaultlib'
+Duplicate found at line 34 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/rv_uart_top.sv
+	(Active) Duplicate found at line 34 of file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/rv_uart_top.sv
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'tx_control()' found in library 'xil_defaultlib'
+Duplicate found at line 3 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/tx_control.sv
+	(Active) Duplicate found at line 3 of file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/tx_control.sv
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'uart_controller()' found in library 'xil_defaultlib'
+Duplicate found at line 23 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/uart_controller.sv
+	(Active) Duplicate found at line 23 of file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/uart_controller.sv
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'CDiv(Behavior)' found in library 'xil_defaultlib'
+	(Active) Duplicate found at line 11 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/CDiv.vhd
+Duplicate found in file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/CDiv.vhd
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'DB(Behavioral)' found in library 'xil_defaultlib'
+	(Active) Duplicate found at line 31 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/DB.vhd
+Duplicate found in file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/DB.vhd
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'FIFO_32I8O(behavioral)' found in library 'xil_defaultlib'
+	(Active) Duplicate found at line 23 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/FIFO_32I8O.vhd
+Duplicate found in file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/FIFO_32I8O.vhd
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'FIFO_8I32O(behavioral)' found in library 'xil_defaultlib'
+	(Active) Duplicate found at line 24 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/FIFO_8I32O.vhd
+Duplicate found in file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/FIFO_8I32O.vhd
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'SingPul(onepulse)' found in library 'xil_defaultlib'
+	(Active) Duplicate found at line 13 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/SingPul.vhd
+Duplicate found in file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/SingPul.vhd
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'uart_rx6(low_level_definition)' found in library 'xil_defaultlib'
+	(Active) Duplicate found at line 100 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/uart_rx6.vhd
+Duplicate found in file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/uart_rx6.vhd
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'uart_tx6(low_level_definition)' found in library 'xil_defaultlib'
+	(Active) Duplicate found at line 100 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/uart_tx6.vhd
+Duplicate found in file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/uart_tx6.vhd
+WARNING: [Runs 36-337] The following IPs are either missing output products or output products are not up-to-date for Synthesis target. Since these IPs are locked, no update to the output products can be done. 
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+/home/sabuj/vivado_new/MiniRISCV/MiniRISCV.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci
+
+[Wed Apr  1 14:09:31 2020] Launched synth_1...
+Run output will be captured here: /home/sabuj/vivado_new/MiniRISCV/MiniRISCV.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP blk_mem_gen_0, cache-ID = 6098b50319847a81; cache size = 1.057 MB.
+WARNING: [Vivado 12-4801] The synthesis checkpoint for IP '/home/sabuj/vivado_new/MiniRISCV/MiniRISCV.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci' is available but stale and the IP is locked. An out-of-context (OOC) run will be created and/or launched, but synthesis may not be able to complete or could result in incorrect behavior.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [HDL 9-3756] overwriting previous definition of module 'ALU' [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/ALU.sv:55]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'Addressable_FIFO' [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Addressable_FIFO.sv:3]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'Branchdecision' [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Brachdecision.sv:28]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'Branoffgen' [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Branoffgen.sv:26]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'CSR' [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/CSR.sv:3]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'Control' [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Control_majumder_backup.sv:44]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'Debug_Display' [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Debug_Display.sv:3]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'Decode' [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Decode.sv:58]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'Execute' [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Execute.sv:58]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'Fetch' [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Fetch.sv:30]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'Fetch_Reprogrammable' [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Fetch_Reprogrammable.sv:39]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'Forwarding' [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Forwarding.sv:35]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'Hazard' [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Hazard.sv:31]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'IRAM_Controller' [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/IRAM_Controller.sv:36]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'Immgen' [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Immgen.sv:25]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'Memory' [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Memory.sv:36]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'Memory_Controller' [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Memory_Controller.sv:3]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'Memory_byteaddress' [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Memory_byteaddress.sv:23]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'Memory_ff' [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Memory_ff.sv:23]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'RISCVcore' [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/RISCVcore.sv:27]
+WARNING: [HDL 9-3756] overwriting previous definition of interface 'main_bus' [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/RISCVcore_uart.sv:27]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'RISCVcore_uart' [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/RISCVcore_uart.sv:205]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'Regfile' [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Regfile.sv:34]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'UART_Programmer' [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/UART_Programmer.sv:28]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'Writeback' [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Writeback.sv:26]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'branchforward' [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/branchforward.sv:34]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'compare' [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/compare.sv:23]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'rv_top' [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/rv_top.sv:2]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'rv_top' [/home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/rv_uart_top.sv:71]
+WARNING: [HDL 9-3756] overwriting previous definition of interface 'riscv_bus' [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/rv_uart_top.sv:3]
+WARNING: [HDL 9-3756] overwriting previous definition of interface 'mmio_bus' [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/rv_uart_top.sv:34]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'rv_top' [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/rv_uart_top.sv:71]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'tx_control' [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/tx_control.sv:3]
+WARNING: [HDL 9-3756] overwriting previous definition of module 'uart_controller' [/home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/uart_controller.sv:23]
+WARNING: [filemgmt 20-736] The current top specification, "rv_top", does not uniquely identify a single design element. Using "rv_top" (Library: xil_defaultlib, File: /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/rv_uart_top.sv).
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'ALU()' found in library 'xil_defaultlib'
+Duplicate found at line 55 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/ALU.sv
+	(Active) Duplicate found at line 55 of file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/ALU.sv
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'Addressable_FIFO()' found in library 'xil_defaultlib'
+Duplicate found at line 3 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Addressable_FIFO.sv
+	(Active) Duplicate found at line 3 of file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Addressable_FIFO.sv
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'Branchdecision()' found in library 'xil_defaultlib'
+Duplicate found at line 28 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Brachdecision.sv
+	(Active) Duplicate found at line 28 of file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Brachdecision.sv
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'Branoffgen()' found in library 'xil_defaultlib'
+Duplicate found at line 26 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Branoffgen.sv
+	(Active) Duplicate found at line 26 of file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Branoffgen.sv
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'CSR()' found in library 'xil_defaultlib'
+Duplicate found at line 3 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/CSR.sv
+	(Active) Duplicate found at line 3 of file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/CSR.sv
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'Control()' found in library 'xil_defaultlib'
+Duplicate found at line 44 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Control_majumder_backup.sv
+	(Active) Duplicate found at line 44 of file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Control_majumder_backup.sv
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'Debug_Display()' found in library 'xil_defaultlib'
+Duplicate found at line 3 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Debug_Display.sv
+	(Active) Duplicate found at line 3 of file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Debug_Display.sv
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'Decode()' found in library 'xil_defaultlib'
+Duplicate found at line 58 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Decode.sv
+	(Active) Duplicate found at line 58 of file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Decode.sv
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'Execute()' found in library 'xil_defaultlib'
+Duplicate found at line 58 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Execute.sv
+	(Active) Duplicate found at line 58 of file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Execute.sv
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'Fetch()' found in library 'xil_defaultlib'
+Duplicate found at line 30 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Fetch.sv
+	(Active) Duplicate found at line 30 of file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Fetch.sv
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'Fetch_Reprogrammable()' found in library 'xil_defaultlib'
+Duplicate found at line 39 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Fetch_Reprogrammable.sv
+	(Active) Duplicate found at line 39 of file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Fetch_Reprogrammable.sv
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'Forwarding()' found in library 'xil_defaultlib'
+Duplicate found at line 35 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Forwarding.sv
+	(Active) Duplicate found at line 35 of file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Forwarding.sv
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'Hazard()' found in library 'xil_defaultlib'
+Duplicate found at line 31 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Hazard.sv
+	(Active) Duplicate found at line 31 of file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Hazard.sv
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'IRAM_Controller()' found in library 'xil_defaultlib'
+Duplicate found at line 36 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/IRAM_Controller.sv
+	(Active) Duplicate found at line 36 of file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/IRAM_Controller.sv
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'Immgen()' found in library 'xil_defaultlib'
+Duplicate found at line 25 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Immgen.sv
+	(Active) Duplicate found at line 25 of file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Immgen.sv
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'Memory()' found in library 'xil_defaultlib'
+Duplicate found at line 36 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Memory.sv
+	(Active) Duplicate found at line 36 of file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Memory.sv
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'Memory_Controller()' found in library 'xil_defaultlib'
+Duplicate found at line 3 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Memory_Controller.sv
+	(Active) Duplicate found at line 3 of file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Memory_Controller.sv
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'Memory_byteaddress()' found in library 'xil_defaultlib'
+Duplicate found at line 23 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Memory_byteaddress.sv
+	(Active) Duplicate found at line 23 of file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Memory_byteaddress.sv
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'Memory_ff()' found in library 'xil_defaultlib'
+Duplicate found at line 23 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Memory_ff.sv
+	(Active) Duplicate found at line 23 of file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Memory_ff.sv
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'RISCVcore()' found in library 'xil_defaultlib'
+Duplicate found at line 27 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/RISCVcore.sv
+	(Active) Duplicate found at line 27 of file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/RISCVcore.sv
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'main_bus()' found in library 'xil_defaultlib'
+Duplicate found at line 27 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/RISCVcore_uart.sv
+	(Active) Duplicate found at line 27 of file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/RISCVcore_uart.sv
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'RISCVcore_uart()' found in library 'xil_defaultlib'
+Duplicate found at line 205 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/RISCVcore_uart.sv
+	(Active) Duplicate found at line 205 of file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/RISCVcore_uart.sv
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'Regfile()' found in library 'xil_defaultlib'
+Duplicate found at line 34 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Regfile.sv
+	(Active) Duplicate found at line 34 of file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Regfile.sv
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'UART_Programmer()' found in library 'xil_defaultlib'
+Duplicate found at line 28 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/UART_Programmer.sv
+	(Active) Duplicate found at line 28 of file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/UART_Programmer.sv
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'Writeback()' found in library 'xil_defaultlib'
+Duplicate found at line 26 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/Writeback.sv
+	(Active) Duplicate found at line 26 of file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/Writeback.sv
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'branchforward()' found in library 'xil_defaultlib'
+Duplicate found at line 34 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/branchforward.sv
+	(Active) Duplicate found at line 34 of file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/branchforward.sv
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'compare()' found in library 'xil_defaultlib'
+Duplicate found at line 23 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/compare.sv
+	(Active) Duplicate found at line 23 of file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/compare.sv
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'rv_top()' found in library 'xil_defaultlib'
+Duplicate found at line 2 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/rv_top.sv
+Duplicate found at line 2 of file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/rv_top.sv
+Duplicate found at line 71 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/rv_uart_top.sv
+	(Active) Duplicate found at line 71 of file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/rv_uart_top.sv
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'riscv_bus()' found in library 'xil_defaultlib'
+Duplicate found at line 3 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/rv_uart_top.sv
+	(Active) Duplicate found at line 3 of file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/rv_uart_top.sv
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'mmio_bus()' found in library 'xil_defaultlib'
+Duplicate found at line 34 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/rv_uart_top.sv
+	(Active) Duplicate found at line 34 of file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/rv_uart_top.sv
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'tx_control()' found in library 'xil_defaultlib'
+Duplicate found at line 3 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/tx_control.sv
+	(Active) Duplicate found at line 3 of file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/tx_control.sv
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'uart_controller()' found in library 'xil_defaultlib'
+Duplicate found at line 23 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/uart_controller.sv
+	(Active) Duplicate found at line 23 of file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/uart_controller.sv
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'CDiv(Behavior)' found in library 'xil_defaultlib'
+	(Active) Duplicate found at line 11 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/CDiv.vhd
+Duplicate found in file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/CDiv.vhd
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'DB(Behavioral)' found in library 'xil_defaultlib'
+	(Active) Duplicate found at line 31 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/DB.vhd
+Duplicate found in file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/DB.vhd
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'FIFO_32I8O(behavioral)' found in library 'xil_defaultlib'
+	(Active) Duplicate found at line 23 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/FIFO_32I8O.vhd
+Duplicate found in file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/FIFO_32I8O.vhd
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'FIFO_8I32O(behavioral)' found in library 'xil_defaultlib'
+	(Active) Duplicate found at line 24 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/FIFO_8I32O.vhd
+Duplicate found in file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/FIFO_8I32O.vhd
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'SingPul(onepulse)' found in library 'xil_defaultlib'
+	(Active) Duplicate found at line 13 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/SingPul.vhd
+Duplicate found in file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/SingPul.vhd
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'uart_rx6(low_level_definition)' found in library 'xil_defaultlib'
+	(Active) Duplicate found at line 100 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/uart_rx6.vhd
+Duplicate found in file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/uart_rx6.vhd
+WARNING: [filemgmt 20-1318] Duplicate Design Unit 'uart_tx6(low_level_definition)' found in library 'xil_defaultlib'
+	(Active) Duplicate found at line 100 of file /home/sabuj/Mini-Risc-V-Uart-Srcs/srcs/uart_tx6.vhd
+Duplicate found in file /home/sabuj/vivado_new/MiniRISCV/Mini-Risc-V-Uart-Srcs/srcs/uart_tx6.vhd
+WARNING: [Runs 36-337] The following IPs are either missing output products or output products are not up-to-date for Synthesis target. Since these IPs are locked, no update to the output products can be done. 
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+/home/sabuj/vivado_new/MiniRISCV/MiniRISCV.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci
+
+[Wed Apr  1 14:11:10 2020] Launched synth_1...
+Run output will be captured here: /home/sabuj/vivado_new/MiniRISCV/MiniRISCV.runs/synth_1/runme.log
+launch_runs impl_2 -jobs 2
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP blk_mem_gen_0, cache-ID = 6098b50319847a81; cache size = 1.057 MB.
+WARNING: [Vivado 12-4801] The synthesis checkpoint for IP '/home/sabuj/vivado_new/MiniRISCV/MiniRISCV.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci' is available but stale and the IP is locked. An out-of-context (OOC) run will be created and/or launched, but synthesis may not be able to complete or could result in incorrect behavior.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+[Wed Apr  1 14:12:39 2020] Launched impl_2...
+Run output will be captured here: /home/sabuj/vivado_new/MiniRISCV/MiniRISCV.runs/impl_2/runme.log
+open_run impl_2
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Netlist 29-17] Analyzing 774 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Constraints 18-5170] The checkpoint was created with non-default parameter values which do not match the current Vivado settings.  Mismatching parameters are:
+  general.maxThreads
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00.35 ; elapsed = 00:00:00.34 . Memory (MB): peak = 7605.695 ; gain = 5.004 ; free physical = 1596 ; free virtual = 6755
+Restored from archive | CPU: 0.350000 secs | Memory: 6.017059 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00.35 ; elapsed = 00:00:00.34 . Memory (MB): peak = 7605.695 ; gain = 5.004 ; free physical = 1596 ; free virtual = 6755
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 7605.695 ; gain = 0.000 ; free physical = 1597 ; free virtual = 6755
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 19 instances were transformed.
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 19 instances
+
+open_run: Time (s): cpu = 00:00:26 ; elapsed = 00:00:18 . Memory (MB): peak = 7788.371 ; gain = 926.566 ; free physical = 1500 ; free virtual = 6662
+reset_run synth_1
+launch_runs impl_2 -to_step write_bitstream -jobs 2
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP blk_mem_gen_0, cache-ID = 6098b50319847a81; cache size = 1.057 MB.
+WARNING: [Vivado 12-4801] The synthesis checkpoint for IP '/home/sabuj/vivado_new/MiniRISCV/MiniRISCV.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci' is available but stale and the IP is locked. An out-of-context (OOC) run will be created and/or launched, but synthesis may not be able to complete or could result in incorrect behavior.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [Runs 36-337] The following IPs are either missing output products or output products are not up-to-date for Synthesis target. Since these IPs are locked, no update to the output products can be done. 
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+/home/sabuj/vivado_new/MiniRISCV/MiniRISCV.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci
+
+[Wed Apr  1 14:15:24 2020] Launched synth_1...
+Run output will be captured here: /home/sabuj/vivado_new/MiniRISCV/MiniRISCV.runs/synth_1/runme.log
+[Wed Apr  1 14:15:24 2020] Launched impl_2...
+Run output will be captured here: /home/sabuj/vivado_new/MiniRISCV/MiniRISCV.runs/impl_2/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:06:40
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210274592712A
+set_property PROGRAM.FILE {/home/sabuj/Downloads/rv_top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {/home/sabuj/Downloads/rv_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.

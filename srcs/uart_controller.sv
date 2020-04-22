@@ -75,7 +75,8 @@ module uart_controller(
     end
     
     
-    integer cnt = 26; 
+    //integer cnt = 26;
+    integer cnt=27; 
 //    integer cnt = 81; 
 //    integer cnt = 53; 
     integer baud_count = 0; 
