@@ -199,7 +199,7 @@ end
 //    .douta(imem_dout), .clkb(clk), .enb((mem_wea | mem_rea) & (~mmio_region)), 
 //    .web(mem_en), .addrb(rbus.mem_addr[12:2]), .dinb(blkmem_din), .doutb(doutb));
 //    .web(mem_en), .addrb(rbus.mem_addr[12:2]), .dinb(blkmem_din), .doutb(doutb));
-  blk_mem_gen_1 sharedmem(.clka(clk), .ena(imem_en), .wea(4'b0000), .addra(imem_addr), .dina(32'hz), 
+  blk_mem_gen_0 sharedmem(.clka(clk), .ena(imem_en), .wea(4'b0000), .addra(imem_addr), .dina(32'hz), 
     .douta(imem_dout), .clkb(clk), .enb((mem_wea | mem_rea) & (kernel_region | prog_region)), 
     .web(mem_en), .addrb(rbus.mem_addr), .dinb(blkmem_din), .doutb(doutb));  
 
