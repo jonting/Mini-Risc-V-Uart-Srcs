@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Jun  8 18:37:41 2020
+# Process ID: 11477
+# Current directory: /home/jting/Projects/senecautk/Mini-Risc-V-Uart-Srcs/gcc
+# Command line: vivado
+# Log file: /home/jting/Projects/senecautk/Mini-Risc-V-Uart-Srcs/gcc/vivado.log
+# Journal file: /home/jting/Projects/senecautk/Mini-Risc-V-Uart-Srcs/gcc/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/jting/Projects/senecautk/RISCV/RISCV.xpr
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {/home/jting/Projects/senecautk/RISCV/RISCV.runs/impl_1/rv_uart_top.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {/home/jting/Projects/senecautk/RISCV/RISCV.runs/impl_1/rv_uart_top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
